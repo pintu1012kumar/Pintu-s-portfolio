@@ -1,4 +1,3 @@
-// app/projects/[id]/page.tsx
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -13,16 +12,16 @@ export default function ProjectPage() {
   const projectIndex = parseInt(params?.id as string);
   const project = projectsData[projectIndex];
 
-  const sections = [
-    { title: "Description", content: project?.description },
-    { title: "Tech Stack", content: project?.techStack.join(", ") },
-    { title: "Features", content: project?.features.join(", ") },
-  ];
-
   const scrambleRefs = useRef<(ScrambleInHandle | null)[]>([]);
 
   useEffect(() => {
     if (!project) return;
+
+    const sections = [
+      { title: "Description", content: project.description },
+      { title: "Tech Stack", content: project.techStack.join(", ") },
+      { title: "Features", content: project.features.join(", ") },
+    ];
 
     sections.forEach((_, index) => {
       setTimeout(() => {
@@ -38,6 +37,12 @@ export default function ProjectPage() {
       </div>
     );
   }
+
+  const sections = [
+    { title: "Description", content: project.description },
+    { title: "Tech Stack", content: project.techStack.join(", ") },
+    { title: "Features", content: project.features.join(", ") },
+  ];
 
   return (
     <main className="min-h-screen w-full flex flex-col">

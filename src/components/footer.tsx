@@ -5,11 +5,7 @@ import { ModeToggle } from "./theme-toggle";
 import { TimeToRead } from "./time-to-read";
 
 export default function SiteFooter() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-
-
+ 
   return (
     <footer className="border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
