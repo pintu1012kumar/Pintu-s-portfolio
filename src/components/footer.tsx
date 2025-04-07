@@ -1,5 +1,4 @@
 "use client";
-import { useState, useRef } from "react";
 import Link from "next/link";
 import { ModeToggle } from "./theme-toggle";
 import { TimeToRead } from "./time-to-read";
