@@ -1,13 +1,8 @@
 "use client";
-
-import { Twitter, Music, PauseCircle } from "lucide-react";
 import { useState, useRef } from "react";
-import { Button } from "./ui/button";
 import Link from "next/link";
 import { ModeToggle } from "./theme-toggle";
-import VisitorCounter from "./visitor-counter";
 import { TimeToRead } from "./time-to-read";
-import { LeaveMessageModal } from "./leave-message-modal";
 
 export default function SiteFooter() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -31,54 +26,26 @@ export default function SiteFooter() {
           <div className="flex flex-wrap justify-between items-center gap-4">
             <div className="flex items-center space-x-4">
               <ModeToggle />
-              <Button
-                onClick={toggleAudio}
-                variant="ghost"
-                size="icon"
-                className="hover:bg-accent"
-                aria-label="Toggle audio"
-              >
-                {isPlaying ? (
-                  <PauseCircle className="h-5 w-5" />
-                ) : (
-                  <Music className="h-5 w-5" />
-                )}
-              </Button>
-              <audio
-                ref={audioRef}
-                src="/audio/audio-nextjs1.mp3"
-                loop
-                className="hidden"
-              />
-              <LeaveMessageModal />
             </div>
 
             <div className="flex items-center space-x-4">
               <span className="text-sm text-muted-foreground">
                 Made by{" "}
                 <Link
-                  href="https://twitter.com/amaan8429"
+                  href="https://x.com/Pintu1012kumar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium underline-offset-4 hover:underline"
                 >
-                  Amaan
+                  Pintu
                 </Link>
               </span>
-              <Link
-                href="https://twitter.com/amaan8429"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg hover:bg-accent"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5" />
-              </Link>
+            
             </div>
           </div>
 
           <div className="flex flex-wrap justify-between items-center gap-4 text-sm text-muted-foreground">
-            <VisitorCounter />
+            
             <TimeToRead />
           </div>
         </div>

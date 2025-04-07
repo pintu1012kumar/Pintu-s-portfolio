@@ -51,7 +51,7 @@ export default function Home() {
     <main className="min-h-screen w-full flex flex-col">
       <header className="w-full p-4 sm:p-6 md:p-8">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-          Amaan&apos;s Portfolio
+          Pintu&apos;s Portfolio
         </h1>
       </header>
 
