@@ -9,8 +9,8 @@ const Portfolio = () => {
   return (
     <div className="max-w-4xl mx-auto p-8 font-mono">
       <header className="mb-8 text-center border-b pb-4">
-        <h1 className="text-3xl font-bold mb-2">Amaan</h1>
-        <p>freelance developer</p>
+        <h1 className="text-3xl font-bold mb-2">Pintu</h1>
+        <p>Full stack developer</p>
       </header>
 
       <section className="mb-8">
@@ -97,7 +97,7 @@ const Portfolio = () => {
       </section>
 
       <footer className="text-center border-t pt-4 mt-8">
-        <p>made with ❤️ by Amaan</p>
+        <p>made with ❤️ by Pintu</p>
       </footer>
     </div>
   );
