@@ -40,7 +40,7 @@ export default function Home() {
         break;
       case 6:
         window.open(
-          "",
+          "https://drive.google.com/file/d/1Tdu7oxMFdpfVm2zdP1SBQCKVlJ4u2CK5/view?usp=sharing",
           "_blank"
         );
         break;
